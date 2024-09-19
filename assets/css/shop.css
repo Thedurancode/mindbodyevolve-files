@@ -1,0 +1,1827 @@
+body {
+	margin:0;
+	padding:0;
+	background: repeat-x top #fff;
+    font-family: 'DM Sans', sans-serif;
+}
+
+:root {
+    --e-global-color-primary: #343434;
+    --e-global-color-secondary: #fa5733;
+    --e-global-color-text: #828282;
+    --e-global-color-accent: #fa5733;
+	--e-global-color-white: #ffffff;
+    --e-global-color-very-dark-gray: #4c4c4c;
+    --e-global-color-very-dark-black: #2d2d2d;
+    --e-global-color-light-gray: #f8f8f8;
+    --e-global-color-desaturated-blue: #7e82b8;
+    --e-global-color-light-orange: #ffbf44;
+    --e-global-color-very-very-light-gray: #eaeaea;
+    --primary-color: #fff;
+    --secondary-color: #232323;
+    --accent: #ee8961;
+    --text-color: #7a7a7a;
+    --button-color: #156c5f;
+}
+a {
+	outline:none;
+	text-decoration:none;
+}
+.default-btn {
+    padding: 20px 38px;
+    display: inline-block;
+    color: var(--e-global-color-white);
+    background-color: var(--accent);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+.hover-effect:hover {
+    transform: translateY(-5px);
+}
+.default-btn:hover {
+    color: var(--e-global-color-white);
+    background-color: var(--button-color);
+    text-decoration: none;
+}
+
+/* Checkout & Cart NFT Section */
+
+.nft-section {
+    background-color: var(--e-global-color-light-gray);
+    padding-bottom: 240px;
+}
+.nft-section h3 {
+    color: var(--e-global-color-primary);
+}
+.nft-section .preview-box {
+    padding: 19px;
+    background-color: var(--e-global-color-white);
+}
+.nft-section .preview-box .preview-img {
+    margin-bottom: 18px;
+}
+.nft-section .preview-box-top {
+    margin-bottom: 11px;
+}
+.nft-section .preview-box-top i {
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--e-global-color-accent);
+}
+.nft-section .preview-box-middle {
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--e-global-color-desaturated-blue);
+    margin-bottom: 24px;
+}
+.nft-section .preview-box-middle .left {
+    float: left;
+    width: 70%;
+}
+.nft-section .preview-box-middle .left figure {
+    float: left;
+    display: inline-block;
+    margin-right: 16px;
+}
+.nft-section .preview-box-middle .left .name {
+    font-size: 16px;
+    line-height: 17px;
+    display: block;
+    font-weight: 400;
+    padding-top: 7px;
+}
+.nft-section .preview-box-middle .left .mail {
+    font-size: 14px;
+    line-height: 14px;
+    display: inline-block;
+    font-weight: 400;
+    color: var(--e-global-color-text);
+}
+.nft-section .preview-box-middle .right {
+    float: right;
+    width: 30%;
+}
+.nft-section .preview-box-middle .right .bid {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    display: block;
+    padding-top: 5px;
+    color: var(--e-global-color-text);
+}
+.nft-section .preview-box-middle .right .price {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.nft-section .preview-box a i {
+    font-family: 'FontAwesome';
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--e-global-color-white);
+    transition: all 0.3s ease-in-out;
+}
+.nft-section .create-nft-box .form-group label {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    color: var(--e-global-color-primary);
+}
+.nft-section .create-nft-box .form-group {
+    float: left;
+    width: 47.1%;
+    margin: 0 15px 15px 0;
+}
+.nft-section .create-nft-box .special {
+    width: 97% !important;
+}
+.nft-section .create-nft-box .form-group .form-control {
+    height: 61px;
+    padding: 0 21px;
+    border-radius: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    outline: none;
+    border: none;
+    color: var(--e-global-color-text);
+}
+.nft-section .form-control::placeholder { 
+    color: var(--e-global-color-text);
+    opacity: 1;
+}
+.nft-section .create-nft-box .form-group .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+.nft-section .create-nft-box .form-group select {
+    -webkit-appearance: none;
+    background-repeat: no-repeat !important;
+    background-position: 94.3% 26px !important;
+    background-image: url('../images/dropdown_arrow.png') !important;
+}
+.nft-section input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    display: block;
+    background-image: url(../images/calendar.png);
+}
+.nft-section .create-nft-box .form-group textarea {
+    height: 117px !important;
+    line-height: 42px !important;
+}
+.nft-section .create-nft-box .form-check {
+    float: left;
+    width: 50%;
+    padding-left: 30px;
+    padding-top: 19px;
+}
+.nft-section .create-nft-box .form-check input {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 0;
+    border: 1px solid var(--e-global-color-accent);
+    border-radius: 100px;
+    -webkit-appearance: none;
+}
+.nft-section .create-nft-box .form-check input:checked {
+    -webkit-appearance: auto;
+}
+.nft-section .create-nft-box .form-check label {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-left: 15px;
+    display: block;
+}
+
+/* Checkout Section */
+
+.checkout-section .create-nft-box .form-group select {
+    background-position: 96.3% 26px !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+.checkout-section .preview-box {
+    float: left;
+    width: 100%;
+}
+.checkout-section .preview-box .product-outer {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--e-global-color-very-dark-black);
+}
+.checkout-section .preview-box .product-outer span {
+    font-size: 16px;
+    line-height: 17px;
+    display: inline-block;
+    font-weight: 700;
+    color: var(--e-global-color-primary);
+}
+.checkout-section .preview-box .product-outer .total {
+    padding-top: 3px;
+    color: var(--e-global-color-text);
+    font-weight: 400;
+}
+.checkout-section .preview-box .shipping-outer {
+    padding: 15px 0;
+}
+.checkout-section .preview-box .shipping-outer .shipping {
+    font-size: 16px;
+    line-height: 17px;
+    font-weight: 700;
+    display: block;
+    color: var(--e-global-color-primary);
+    margin-bottom: 15px;
+}
+.checkout-section .preview-box .shipping-outer .price {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    display: block;
+    color: var(--e-global-color-text);
+}
+.checkout-section .preview-box .total-price-outer {
+    padding: 15px 0;
+}
+.checkout-section .preview-box .total-price-outer span {
+    font-size: 16px;
+    line-height: 17px;
+    display: inline-block;
+    font-weight: 700;
+    color: var(--e-global-color-primary);
+}
+.checkout-section .preview-box .total-price-outer .total {
+    padding-top: 3px;
+    color: var(--e-global-color-text);
+    font-weight: 400;
+}
+.checkout-section .preview-box .form-check {
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--e-global-color-very-dark-black);
+}
+.checkout-section .preview-box .form-check input {
+    width: 20px;
+    height: 20px;
+    line-height: 24px;
+    margin-top: 0;
+    border: 1px solid var(--e-global-color-very-dark-black);
+    border-radius: 100px;
+    -webkit-appearance: none;
+    top: 2px;
+}
+.checkout-section .preview-box .form-check input:checked {
+    -webkit-appearance: auto;
+}
+.checkout-section .preview-box .form-check label {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    display: block;
+    color: var(--e-global-color-primary);
+}
+.checkout-section .preview-box .form-check p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-left: 15px;
+    color: var(--e-global-color-text);
+}
+.checkout-section .preview-box .btn-outer button {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+}
+.checkout-section .preview-box .btn-outer button i {
+    font-family: 'FontAwesome';
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--e-global-color-white);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cart Section */
+
+.cart-section .product-detail-box {
+    padding: 50px;
+}
+.cart-section .product-image {
+    float: left;
+    width: 14%;
+}
+.cart-section .product-details {
+    float: left;
+    width: 34%;
+}
+.cart-section .product-price {
+    float: left;
+    width: 15%;
+    color: var(--e-global-color-primary);
+}
+.cart-section .product-quantity {
+    float: left;
+    width: 16%;
+}
+.cart-section .product-removal {
+    float: left;
+    width: 9%;
+}
+.cart-section .product-line-price {
+    float: left;
+    width: 12%;
+    text-align: right;
+    color: var(--e-global-color-primary);
+}
+/* This is used as the traditional .clearfix class */
+.cart-section .group:before, .cart-section .shopping-cart:before, .cart-section .column-labels:before, .cart-section .product:before, .cart-section .totals-item:before,
+.cart-section .group:after,
+.cart-section .shopping-cart:after,
+.cart-section .column-labels:after,
+.cart-section .product:after,
+.cart-section .totals-item:after {
+    content: '';
+    display: table;
+}
+.cart-section .group:after, .cart-section .shopping-cart:after, .cart-section .column-labels:after, .cart-section .product:after, .cart-section .totals-item:after {
+    clear: both;
+}
+.cart-section .group, .cart-section .shopping-cart, .cart-section .column-labels, .cart-section .product, .cart-section .totals-item {
+    zoom: 1;
+}
+/* Body/Header stuff */
+.cart-section label {
+    color: var(--e-global-color-primary);
+}
+/* Column headers */
+.cart-section .column-labels label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--e-global-color-very-dark-black);
+    color: var(--e-global-color-primary);
+}
+.cart-section .column-labels .product-image {
+    text-indent: -9999px;
+}
+/* Product entries */
+.cart-section .product {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--e-global-color-very-dark-black);
+}
+.cart-section .product .product-image {
+    text-align: left;
+}
+.cart-section .product .product-image img {
+    width: 100px;
+    transition: all 0.3s ease-in-out;
+}
+.cart-section .product .product-details .product-title {
+    margin-right: 20px;
+    color: var(--e-global-color-primary);
+}
+.cart-section .product .product-details .product-description {
+    margin: 5px 20px 5px 0;
+    line-height: 1.4em;
+}
+.cart-section .product .product-quantity input {
+    width: 40px;
+    border: 1px solid var(--e-global-color-primary);
+    background: transparent;
+    color: var(--e-global-color-primary);
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    border-radius: 3px;
+}
+.cart-section .product .product-quantity input:focus-visible {
+    outline: none;
+}
+.cart-section .product .remove-product {
+    border: 0;
+    padding: 4px 8px;
+    border: 1px solid var(--e-global-color-primary);
+    background: transparent;
+    color: var(--e-global-color-primary);
+    font-size: 12px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.cart-section .product .remove-product:hover {
+    background: var(--button-color);
+    color: var(--e-global-color-white);
+    border-color: var(--button-color);
+    cursor: pointer;
+}
+.cart-section .preview-box .btn-outer .btn {
+    width: auto;
+}
+
+/* Shop Section */
+
+.shop_section {
+    background-color: var(--e-global-color-light-gray);
+    padding: 130px 0 200px;
+}
+.shop_section .nav-tabs {
+    border-bottom: 0px solid var(--e-global-color-accent);
+    padding: 0 200px;
+    margin-bottom: 58px;
+    justify-content: center;
+}
+.shop_section .tabs-box .nav-tabs li {
+    margin: 0 10px;
+}
+.shop_section .tabs-box .nav-tabs li:first-child {
+    margin-left: 0;
+}
+.shop_section .tabs-box .nav-tabs li:last-child {
+    margin-right: 0;
+}
+.shop_section .tabs-box .nav-tabs li a {
+    display: inline-block;
+    color: var(--e-global-color-primary);
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    font-weight: 400;
+    padding: 10px 4px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+.shop_section .tabs-box .nav-tabs li a:hover {
+    color: var(--e-global-color-accent);
+    border-bottom: 2px solid var(--e-global-color-accent);
+}
+.shop_section .tabs-box .nav-tabs li a.active {
+    color: var(--e-global-color-accent);
+    border-bottom: 2px solid var(--e-global-color-accent);
+}
+.shop_section .shop_box {
+    background: var(--e-global-color-white);
+    padding: 20px 20px 25px;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.shop_section .shop_box .shop_image_box {
+    background: var(--e-global-color-light-gray);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 242px;
+    justify-content: center;
+}
+.shop_section .shop_box .shop_image_box figure img{
+    width: 85%;
+    transition: all 0.3s ease-in-out;
+}
+.shop_section .shop_box .shop_box_content {
+    padding: 25px 10px 0;
+}
+.shop_section .shop_box .shop_box_content ul {
+    margin-bottom: 10px;
+}
+.shop_section .shop_box .shop_box_content ul li {
+    display: inline-block;
+}
+.shop_section .shop_box .shop_box_content ul li i {
+    color: var(--e-global-color-light-orange);
+    font-size: 12px;
+    line-height: 12px;
+}
+.shop_section .shop_box .shop_box_content h5 {
+    font-size: 20px;
+    color: var(--e-global-color-primary);
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.shop_section .shop_box .shop_box_content p {
+    color: var(--e-global-color-text);
+    margin-bottom: 14px;
+    transition: all 0.3s ease-in-out;
+}
+.shop_section .shop_box .shop_box_content .price_wrapper {
+    margin-bottom: 12px;
+}
+.shop_section .shop_box .shop_box_content .price_wrapper span {
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--e-global-color-secondary);
+    margin-left: -5px;
+    transition: all 0.3s ease-in-out;
+}
+.shop_section .shop_box .shop_box_content .price_wrapper .dollar {
+    margin-left: 0;
+}
+.shop_section .shop_box .shop_box_content .btn_wrapper a {
+    color: var(--e-global-color-primary);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+.shop_section .shop_box .shop_box_content .btn_wrapper a i {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--e-global-color-primary);
+    transition: all 0.3s ease-in-out;
+}
+.shop_section .shop_box:hover {
+    border: 1px solid var(--e-global-color-secondary);
+}
+.shop_section .shop_box:hover h5 {
+    color: var(--e-global-color-accent);
+}
+.shop_section .shop_box:hover .price_wrapper span {
+    color: var(--e-global-color-very-dark-gray);
+}
+.shop_section .shop_box:hover .btn_wrapper a {
+    color: var(--e-global-color-accent);
+}
+.shop_section .shop_box:hover .btn_wrapper a i {
+    color: var(--e-global-color-accent);
+}
+.shop_section .shop_box .btn_wrapper a:hover {
+    color: var(--e-global-color-very-dark-gray);
+} 
+.shop_section .shop_box .btn_wrapper a:hover i {
+    color: var(--e-global-color-very-dark-gray);
+}
+
+/* Product Detail Page Style */
+
+/* Product Detail Page Product Detail Section */
+
+.product-detail {
+    padding: 130px 0;
+    background-color: var(--e-global-color-light-gray);
+}
+.product-detail .product-tab .tab-content {
+    margin-bottom: 12px;
+    float: left;
+    width: 100%;
+}
+.product-detail .product-tab .tab-pane {
+    padding: 20px;
+    background-color: var(--e-global-color-white);
+    float: left;
+    width: 100%;
+}
+.product-detail .product-tab .tab-pane figure img {
+    width: 100%;
+}
+.product-detail .product-tab .nav-tabs {
+    border: none;
+    float: left;
+    width: 100%;
+}
+.product-detail .product-tab ul li {
+    padding: 0;
+    background-color: var(--e-global-color-white);
+    display: block;
+    width: 31.6%;
+    margin: 0 7px;
+}
+.product-detail .product-tab ul li a {
+    padding: 7px;
+    border-radius: 0;
+    border-radius: 0 !important;
+    transition: all 0.3s ease-in-out;
+    float: left;
+    border: none;
+}
+.product-detail .product-tab ul li a:hover {
+    border: 1px solid var(--borderline-color) !important;
+}
+.product-detail .product-tab ul li:first-child {
+    margin-left: 0;
+}
+.product-detail .product-tab ul li:last-child {
+    margin-right: 0;
+}
+.product-detail .product-tab ul .active {
+    border: 1px solid var(--borderline-color);
+    background-color: transparent !important;
+    border-color: var(--borderline-color) !important;
+    border-radius: 0 !important;
+}
+.product-detail .product-tab ul li a img {
+    height: auto;
+    width: 100%;
+}
+.product-detail .heading {
+    padding-top: 60px;
+}
+.product-detail .heading h3 {
+    margin-bottom: 18px;
+    color: var(--e-global-color-primary);
+}
+.product-detail .heading .price_wrapper {
+    margin-bottom: 15px;
+}
+.product-detail .heading .price_wrapper .dollar {
+    margin-left: 0;
+}
+.product-detail .heading .price_wrapper span {
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--accent);
+    margin-left: -5px;
+    transition: all 0.3s ease-in-out;
+}
+.product-detail .heading p {
+    margin-bottom: 20px;
+    color: var(--e-global-color-text);
+}
+.product-detail .heading a i {
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--e-global-color-white);
+    transition: all 0.3s ease-in-out;
+}
+.product-detail .heading .cart_btn {
+    padding: 15px 20px;
+    display: inline-block;
+    color: var(--e-global-color-white);
+    background-color: var(--accent);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+.product-detail .heading .cart_btn:hover {
+    background-color: var(--e-global-color-very-dark-gray);
+}
+.product-detail .heading .category_wrapper {
+    margin-bottom: 10px;
+}
+.product-detail .heading .category_wrapper span {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--e-global-color-primary);
+    padding-right: 5px;
+}
+.product-detail .heading .category_wrapper a {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: var(--e-global-color-text);
+    transition: all 0.3s ease-in-out;
+}
+.product-detail .heading .category_wrapper a:hover {
+    color: var(--e-global-color-accent);
+}
+.product-detail .heading .tag_wrapper span {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--e-global-color-primary);
+    padding-right: 5px;
+}
+.product-detail .heading .tag_wrapper a {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: var(--e-global-color-text);
+    transition: all 0.3s ease-in-out;
+}
+.product-detail .heading .tag_wrapper a:hover {
+    color: var(--e-global-color-accent);
+}
+.product-detail .heading .quatity_button_wrapper {
+    margin-bottom: 20px;
+}
+.product-detail .heading .quantity-field {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px; 
+    height: 40px;
+}
+.product-detail .heading .quantity-field .value-button{ 
+    border: 1px solid var(--e-global-color-very-very-light-gray);
+    margin: 0px;
+    width: 40px;
+    height: 100%;   
+    padding: 0;
+    background: var(--e-global-color-very-very-light-gray); 
+    outline: none;
+    cursor: pointer;
+}
+.product-detail .heading .quantity-field .value-button:hover {
+    background: rgb(230, 230, 230);
+}
+.product-detail .heading .quantity-field .value-button:active{
+    background: rgb(210, 210, 210);
+}
+.product-detail .heading .quantity-field .decrease-button {
+    margin-right: -4px;
+}
+.product-detail .heading .quantity-field .increase-button {
+    margin-left: -4px;
+}
+.product-detail .heading .quantity-field .number{
+    display: inline-block;
+    text-align: center;
+    border: none;
+    border-top: 1px solid var(--e-global-color-very-very-light-gray);
+    border-bottom: 1px solid var(--e-global-color-very-very-light-gray);
+    margin: 0px;
+    width: 40px;
+    height: 100%;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    box-sizing: border-box; 
+    background: var(--e-global-color-white);
+}
+.product-detail .heading .quantity-field .number::selection{
+    background: none;
+}
+
+/* Product Detail Page More Information Section */
+
+.more_information_section {
+    padding: 130px 0;
+}
+.more_information_section .nav-tabs {
+    border-bottom: 0px solid var(--e-global-color-accent);
+    padding: 0;
+    margin-bottom: 40px;
+}
+.more_information_section .tabs-box .nav-tabs li {
+    margin: 0 21px;
+}
+.more_information_section .tabs-box .nav-tabs li:first-child {
+    margin-left: 0;
+}
+.more_information_section .tabs-box .nav-tabs li:last-child {
+    margin-right: 0;
+}
+.more_information_section .tabs-box .nav-tabs li a {
+    display: inline-block;
+    color: var(--e-global-color-primary);
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    font-weight: 600;
+    padding: 10px 4px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+.more_information_section .tabs-box .nav-tabs li a:hover {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
+.more_information_section .tabs-box .nav-tabs li a.active {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
+.more_information_section .description_content p {
+    color: var(--e-global-color-text);
+}
+.more_information_section .information_content table {
+    width: 100%;
+}
+.more_information_section .information_content table tr:nth-child(2n+1){
+    background-color: var(--e-global-color-light-gray);
+}
+.more_information_section .information_content table tr th {
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: var(--e-global-color-primary);
+}
+.more_information_section .information_content table tr td {
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--e-global-color-primary);
+}
+.more_information_section .reviews_content_box {
+    border: 1px solid var(--e-global-color-very-very-light-gray);
+    padding: 40px 45px 35px 30px;
+    margin-bottom: 28px;
+    transition: all 0.3s ease-in-out;
+}
+.more_information_section .reviews_content_box h5 {
+    font-size: 20px;
+    color: var(--e-global-color-primary);
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.more_information_section .reviews_content_box p {
+    color: var(--e-global-color-text);
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.more_information_section .reviews_content_box figure{
+    width: 7%;
+}
+.more_information_section .reviews_content_box figure img {
+    border-radius: 100%;
+    transition: all 0.3s ease-in-out;
+}
+.more_information_section .reviews_content_box .text_wrapper{
+    width: 93%;
+    display: inline-block;
+    padding-left: 15px;
+}
+.more_information_section .reviews_content_box ul li {
+    display: inline-block;
+}
+.more_information_section .reviews_content_box ul li i {
+    color: var(--e-global-color-light-orange);
+    font-size: 16px;
+    line-height: 16px;
+}
+.more_information_section .reviews_content h6 {
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+    color: var(--e-global-color-accent);
+}
+.more_information_section .reviews_content h3 {
+    margin-bottom: 35px;
+    color: var(--e-global-color-primary);
+}
+.more_information_section .reviews_content form input, .more_information_section .reviews_content form textarea {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 1px solid var(--e-global-color-very-very-light-gray);
+    color: var(--e-global-color-text);
+    border-radius: 0;
+    padding: 10px 20px;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    outline: none;
+}
+.more_information_section .reviews_content form textarea {
+    height: 150px;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 15px 20px;
+}
+.more_information_section .reviews_content .form-control::placeholder{
+    color: var(--e-global-color-text);
+}
+.more_information_section .reviews_content .form-control:focus{
+    box-shadow: none;
+}
+.more_information_section .reviews_content button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    outline: none;
+    padding: 20px 25px 20px 52px;
+    display: inline-block;
+    color: var(--e-global-color-white);
+    background-color: var(--accent);
+    text-transform: uppercase;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+.more_information_section .reviews_content button i {
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--e-global-color-white);
+    transition: all 0.3s ease-in-out;
+}
+.more_information_section .reviews_content button:hover {
+    background-color: var(--e-global-color-very-dark-gray);
+    color: var(--e-global-color-white);
+}
+.more_information_section .reviews_content button:hover i {
+    color: var(--e-global-color-white);
+}
+
+/* Product Detail Page Related Product Section */
+
+.related_product_section {
+    background-color: var(--e-global-color-light-gray);
+    padding: 130px 0 200px;
+}
+.related_product_section .related_product_content h3 {
+    color: var(--e-global-color-primary);
+    margin-bottom: 40px;
+}
+.related_product_section .related_product_box {
+    background: var(--e-global-color-white);
+    padding: 20px 20px 25px;
+    margin-bottom: 30px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.related_product_section .related_product_box .related_product_image_box {
+    background: var(--e-global-color-light-gray);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 242px;
+    justify-content: center;
+}
+.related_product_section .related_product_box .related_product_image_box figure img {
+    width: 75%;
+    transition: all 0.3s ease-in-out;
+}
+.related_product_section .related_product_box .related_product_box_content {
+    padding: 25px 10px 0;
+}
+.related_product_section .related_product_box .related_product_box_content ul {
+    margin-bottom: 10px;
+}
+.related_product_section .related_product_box .related_product_box_content ul li {
+    display: inline-block;
+}
+.related_product_section .related_product_box .related_product_box_content ul li i {
+    color: var(--e-global-color-light-orange);
+    font-size: 12px;
+    line-height: 12px;
+}
+.related_product_section .related_product_box .related_product_box_content h5 {
+    font-size: 20px;
+    color: var(--e-global-color-primary);
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+}
+.related_product_section .related_product_box .related_product_box_content p {
+    color: var(--e-global-color-text);
+    margin-bottom: 14px;
+    transition: all 0.3s ease-in-out;
+}
+.related_product_section .related_product_box .related_product_box_content .price_wrapper {
+    margin-bottom: 12px;
+}
+.related_product_section .related_product_box .related_product_box_content .price_wrapper span {
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--e-global-color-secondary);
+    margin-left: -5px;
+    transition: all 0.3s ease-in-out;
+}
+.related_product_section .related_product_box .related_product_box_content .price_wrapper .dollar {
+    margin-left: 0;
+}
+.related_product_section .related_product_box .related_product_box_content .btn_wrapper a {
+    color: var(--e-global-color-primary);
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+.related_product_section .related_product_box .related_product_box_content .btn_wrapper a i {
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--e-global-color-primary);
+    transition: all 0.3s ease-in-out;
+}
+.related_product_section .related_product_box:hover {
+    border: 1px solid var(--e-global-color-secondary);
+}
+.related_product_section .related_product_box:hover h5 {
+    color: var(--e-global-color-accent);
+}
+.related_product_section .related_product_box:hover .price_wrapper span {
+    color: var(--e-global-color-very-dark-gray);
+}
+.related_product_section .related_product_box:hover .btn_wrapper a {
+    color: var(--e-global-color-accent);
+}
+.related_product_section .related_product_box:hover .btn_wrapper a i {
+    color: var(--e-global-color-accent);
+}
+.related_product_section .related_product_box .btn_wrapper a:hover {
+    color: var(--e-global-color-very-dark-gray);
+} 
+.related_product_section .related_product_box .btn_wrapper a:hover i {
+    color: var(--e-global-color-very-dark-gray);
+}
+
+/*************************************************************
+=-*=-*=-*=-*=-*=-*= Responsive =-*=-*=-*=-*=-*=-*=
+*************************************************************/
+@media screen and (max-width: 1199px) {
+	.widget-newsletter .form-control {
+		font-size: 12px;
+		padding: 10px 10px;
+	}
+	.sidebar .widget .tabs li > a {
+		font-size: 13px;
+		padding: 10px 8px;
+	}
+	.sidebar .widget {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+    .default-btn {
+        padding: 18px 20px 18px 35px;
+    }
+    .nft-section { 
+        padding: 200px 0; 
+    }
+    .nft-section .create-nft-box .form-group { 
+        width: 46.5%; 
+    }
+    .nft-section .preview-box a i {
+        padding-left: 20px;
+    }
+    .shop_section {
+        padding: 90px 0 170px;
+    }
+    .shop_section .nav-tabs {
+        padding: 0 200px;
+        margin-bottom: 45px;
+    }
+    .shop_section .shop_box {
+        padding: 15px 15px 20px;
+    }
+    .shop_section .shop_box .shop_box_content {
+        padding: 20px 10px 0;
+    }
+    .shop_section .shop_box .shop_box_content ul {
+        margin-bottom: 8px;
+    }
+    .shop_section .shop_box .shop_box_content h5 {
+        font-size: 18px;
+    }
+    .shop_section .shop_box .shop_box_content p {
+        margin-bottom: 10px;
+    }
+    .shop_section .shop_box .shop_box_content .price_wrapper {
+        margin-bottom: 10px;
+    }
+    .shop_section .shop_box .shop_box_content .price_wrapper span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .shop_section .shop_box .shop_box_content .btn_wrapper a i {
+        padding-left: 12px;
+    }
+
+    .product-detail { 
+        padding: 100px 0; 
+    }
+    .product-detail .product-tab ul li { 
+        width: 31.2%; 
+    }
+    .product-detail .heading h3 {
+        margin-bottom: 16px;
+    }
+    .product-detail .heading .price_wrapper {
+        margin-bottom: 12px;
+    }
+    .product-detail .heading .price_wrapper span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .product-detail .heading p {
+        margin-bottom: 18px;
+    }
+    .product-detail .heading a i {
+        padding-left: 20px;
+    }
+    .product-detail .heading .category_wrapper span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .product-detail .heading .tag_wrapper span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .more_information_section {
+        padding: 100px 0;
+    }
+    .more_information_section .nav-tabs {
+        margin-bottom: 35px;
+    }
+    .more_information_section .reviews_content_box {
+        padding: 35px 35px 35px 30px;
+        margin-bottom: 25px;
+    }
+    .more_information_section .reviews_content h3 {
+        margin-bottom: 30px;
+    }
+    .more_information_section .reviews_content form input, .more_information_section .reviews_content form textarea {
+        padding: 8px 18px;
+        height: 52px;
+        margin-bottom: 18px;
+    }
+    .more_information_section .reviews_content form textarea {
+        height: 140px;
+        margin-bottom: 25px;
+        padding: 12px 18px;
+    }
+    .more_information_section .reviews_content_box h5 {
+        font-size: 18px;
+    }
+    .more_information_section .reviews_content button {
+        padding: 18px 22px 18px 45px;
+    }
+    .more_information_section .reviews_content button i {
+        padding-left: 15px;
+    }
+    .more_information_section .reviews_content_box p {
+        margin-bottom: 8px;
+    }
+    .more_information_section .reviews_content_box ul li i {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .related_product_section {
+        padding: 90px 0 170px;
+    }
+    .related_product_section .related_product_content h3 {
+        margin-bottom: 35px;
+    }    
+    .related_product_section .related_product_box {
+        padding: 15px 15px 20px;
+    }
+    .related_product_section .related_product_box .related_product_box_content {
+        padding: 20px 10px 0;
+    }
+    .related_product_section .related_product_box .related_product_box_content ul {
+        margin-bottom: 8px;
+    }
+    .related_product_section .related_product_box .related_product_box_content h5 {
+        font-size: 18px;
+    }
+    .related_product_section .related_product_box .related_product_box_content p {
+        margin-bottom: 10px;
+    }
+    .related_product_section .related_product_box .related_product_box_content .price_wrapper {
+        margin-bottom: 10px;
+    }
+    .related_product_section .related_product_box .related_product_box_content .price_wrapper span {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .related_product_section .related_product_box .related_product_box_content .btn_wrapper a i {
+        padding-left: 12px;
+    }
+}
+@media screen and (max-width: 991px) {
+	.respond-form {
+		padding-top: 0;
+	}
+    .default-btn {
+        padding: 15px 20px 15px 30px;
+    }
+    .nft-section { 
+        padding: 170px 0; 
+    }
+    .nft-section .preview-box-middle .left .name { 
+        font-size: 16px; 
+    }
+    .nft-section .preview-box-middle .right .bid { 
+        font-size: 13px; 
+    }
+    .nft-section .preview-box-middle .right .price { 
+        font-size: 16px; 
+    }
+    .nft-section .preview-box-middle { 
+        padding-bottom: 25px; 
+    }
+    .nft-section .create-nft-box .form-group .form-control { 
+        font-size: 14px;
+        height: 50px;
+        line-height: 20px;
+        padding: 0 15px;
+    }
+    .nft-section .create-nft-box .form-group select { 
+        background-position: 91% 21px !important; 
+    }
+    .nft-section .create-nft-box .form-group { 
+        width: 46.6%; 
+        margin: 0 10px 15px 0;
+    }
+    .nft-section .create-nft-box .form-group textarea { 
+        height: 110px !important; 
+        line-height: 36px !important;
+    }
+    .nft-section .create-nft-box .form-check { 
+        width: 100%; 
+        padding-top: 10px; 
+        padding-bottom: 20px; 
+    }
+    .nft-section .create-nft-box .btn { 
+        font-size: 16px; 
+        line-height: 16px; 
+        padding: 18px 40px; 
+        width: 97%; 
+        margin: 0 6px; 
+    }
+    .nft-section .create-nft-box .btn-outer { 
+        padding-top: 0px; 
+    }
+    .nft-section .create-nft-box .form-check input { 
+        width: 20px; 
+        height: 20px; 
+        line-height: 20px; 
+    }
+    .nft-section .create-nft-box .form-check label { 
+        line-height: 18px; 
+    }
+    .nft-section .preview-box a i {
+        padding-left: 15px;
+    }
+    .checkout-section .preview-box .product-outer .total { 
+        padding-top: 5px; 
+        font-size: 14px; 
+    }
+    .checkout-section .preview-box .total-price-outer .total { 
+        padding-top: 5px; 
+        font-size: 14px; 
+    }
+    #search input[type="search"] { 
+        font-size: 36px; 
+    }
+    .checkout-section .create-nft-box .form-group select { 
+        background-position: 94.3% 21px !important; 
+    }
+    .cart-section .product-image { 
+        width: 20%; 
+    }
+    .cart-section .product-details { 
+        width: 30%; 
+    }
+    .cart-section .product-price { 
+        width: 16%; 
+    }
+    .cart-section .product-quantity { 
+        width: 13%; 
+    }
+    .shop_section {
+        padding: 60px 0 110px;
+    }
+    .shop_section .nav-tabs {
+        padding: 0 120px;
+        margin-bottom: 35px;
+    }
+    .shop_section .tabs-box .nav-tabs li {
+        margin: 0 10px;
+    }
+    .shop_section .shop_box {
+        padding: 10px 10px 15px;
+    }
+    .shop_section .shop_box .shop_box_content {
+        padding: 15px 5px 0;
+    }
+    .shop_section .shop_box .shop_box_content ul {
+        margin-bottom: 5px;
+    }
+    .shop_section .shop_box .shop_box_content h5 {
+        font-size: 16px;
+    }
+    .shop_section .shop_box .shop_box_content p {
+        margin-bottom: 8px;
+    }
+    .shop_section .shop_box .shop_box_content .price_wrapper {
+        margin-bottom: 8px;
+    }
+    .shop_section .shop_box .shop_box_content .price_wrapper span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .shop_section .shop_box .shop_box_content .btn_wrapper a i {
+        padding-left: 10px;
+    }
+
+    .product-detail {
+        padding: 70px 0;
+    }
+    .product-detail .product-tab ul li {
+        width: 30.5%; 
+    }
+    .product-detail .product-tab .tab-pane { 
+        padding: 15px; 
+    }
+    .product-detail .heading {
+        padding-top: 40px;
+    }
+    .product-detail .heading .quatity_button_wrapper {
+        margin-bottom: 18px;
+    }
+    .product-detail .heading .cart_btn {
+        padding: 15px 18px;
+    }
+    .product-detail .heading a i {
+        padding-left: 15px;
+    }
+    .product-detail .heading .category_wrapper a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .product-detail .heading .tag_wrapper a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .more_information_section {
+        padding: 70px 0;
+    }
+    .more_information_section .nav-tabs {
+        margin-bottom: 30px;
+    }
+    .more_information_section .tabs-box .nav-tabs li {
+        margin: 0 15px;
+    }
+    .more_information_section .information_content table tr th {
+        padding: 8px 12px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .more_information_section .information_content table tr td {
+        padding: 8px 12px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .more_information_section .reviews_content_box {
+        padding: 30px 25px;
+        margin-bottom: 20px;
+    }
+    .more_information_section .reviews_content_box figure {
+        width: 12%;
+    }
+    .more_information_section .reviews_content_box .text_wrapper {
+        width: 88%;
+        padding-left: 5px;
+    }
+    .more_information_section .reviews_content_box h5 {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    .more_information_section .reviews_content_box p {
+        margin-bottom: 5px;
+    }
+    .more_information_section .reviews_content_box ul li i {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .more_information_section .reviews_content h6 {
+        margin-bottom: 5px;
+    }
+    .more_information_section .reviews_content h3 {
+        margin-bottom: 20px;
+    }
+    .more_information_section .reviews_content form input, .more_information_section .reviews_content form textarea {
+        padding: 5px 15px;
+        height: 48px;
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .more_information_section .reviews_content form textarea {
+        height: 125px;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+    }
+    .more_information_section .reviews_content button {
+        padding: 16px 18px 16px 30px;
+    }
+    .more_information_section .reviews_content button i {
+        padding-left: 12px;
+    }
+    .related_product_section {
+        padding: 60px 0 110px;
+    }
+    .related_product_section .related_product_content h3 {
+        margin-bottom: 30px;
+    }
+    .related_product_section .related_product_box {
+        padding: 10px 10px 15px;
+    }
+    .related_product_section .related_product_box .related_product_box_content {
+        padding: 15px 5px 0;
+    }
+    .related_product_section .related_product_box .related_product_box_content ul {
+        margin-bottom: 5px;
+    }
+    .related_product_section .related_product_box .related_product_box_content h5 {
+        font-size: 16px;
+    }
+    .related_product_section .related_product_box .related_product_box_content p {
+        margin-bottom: 8px;
+    }
+    .related_product_section .related_product_box .related_product_box_content .price_wrapper {
+        margin-bottom: 8px;
+    }
+    .related_product_section .related_product_box .related_product_box_content .price_wrapper span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .related_product_section .related_product_box .related_product_box_content .btn_wrapper a i {
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .default-btn {
+        padding: 15px 18px 15px 25px;
+    }
+    .nft-section { 
+        padding: 140px 0; 
+    }
+    .nft-section .preview-box .preview-img img { 
+        width: 100%; 
+    }
+    .nft-section .create-nft-box .form-group label { 
+        font-size: 14px; 
+        line-height: 14px; 
+    }
+    .nft-section .create-nft-box .form-check label { 
+        font-size: 14px; 
+        line-height: 18px; 
+        margin-left: 10px; 
+    }
+    .nft-section .create-nft-box .form-group { 
+        width: 47.9%;
+    }
+    .nft-section .create-nft-box .special { 
+        width: 98% !important; 
+    }
+    .nft-section .preview-box-middle .right { 
+        text-align: right; 
+    }
+    .nft-section .preview-box a i {
+        padding-left: 12px;
+    }
+    #search input[type="search"] { 
+        font-size: 30px; 
+    }
+    .checkout-section .create-nft-box .form-group select { 
+        background-position: 96.3% 21px !important; 
+    }
+
+    .cart-section .product-detail-box { 
+        padding: 30px; 
+    }
+    .cart-section .shopping-cart { 
+        margin: 0; 
+        padding-top: 20px; 
+        border-top: 1px solid #47476d; 
+    }
+    .cart-section .column-labels { 
+        display: none; 
+    }
+    .cart-section .product-image { 
+        text-align: center; 
+        float: right; 
+        width: auto; 
+    }
+    .cart-section .product-image img {
+        margin: 0 0 10px 10px; 
+    }
+    .cart-section .product-details { 
+        float: none; 
+        margin-bottom: 10px; 
+        width: auto; 
+    }
+    .cart-section .product-price { 
+        clear: both; 
+        width: 90px; 
+    }
+    .cart-section .product-quantity { 
+        width: 100px; 
+    }
+    .cart-section .product-quantity input { 
+        margin-left: 20px; 
+    }
+    .cart-section .product-quantity:before { 
+        content: 'x'; 
+    }
+    .cart-section .product-removal { 
+        width: auto; 
+    }
+    .cart-section .product-line-price { 
+        float: right; 
+        width: 70px; 
+    }
+    .cart-section .product .product-quantity input { 
+        width: 35px; 
+        height: 28px; 
+    }
+    .shop_section {
+        padding: 50px 0 100px;
+    }
+    .shop_section .nav-tabs {
+        padding: 0 60px;
+        margin-bottom: 30px;
+    }
+    .shop_section .tabs-box .nav-tabs li {
+        margin: 0 12px;
+    }
+    .shop_section .tabs-box .nav-tabs li a {
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .shop_section .shop_box .shop_box_content ul li i {
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .product-detail {
+        padding: 60px 0 55px;
+    }
+    .product-detail .heading {
+        padding-top: 0;
+    }
+    .product-detail .heading h3 {
+        margin-bottom: 10px;
+    }
+    .product-detail .heading .price_wrapper {
+        margin-bottom: 5px;
+    }
+    .product-detail .heading .price_wrapper span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .product-detail .heading p {
+        margin-bottom: 15px;
+    }
+    .product-detail .heading .quatity_button_wrapper {
+        margin-bottom: 15px;
+    }
+    .product-detail .heading .quantity-field {
+        width: 115px;
+        height: 35px;
+    }
+    .product-detail .heading .quantity-field .decrease-button {
+        margin-right: -5px;
+    }
+    .product-detail .heading .quantity-field .value-button {
+        width: 35px;
+        height: 90%;
+    }
+    .product-detail .heading .quantity-field .number {
+        width: 35px;
+        height: 90%;
+        line-height: 35px;
+    }
+    .product-detail .heading .quantity-field .increase-button {
+        margin-left: -5px;
+    }
+    .product-detail .heading .cart_btn {
+        padding: 12px 15px;
+    }
+    .product-detail .heading a i {
+        padding-left: 12px;
+    }
+    .product-detail .heading .category_wrapper {
+        margin-bottom: 8px;
+    }
+
+    .more_information_section {
+        padding: 60px 0;
+    }
+    .more_information_section .tabs-box .nav-tabs li a {
+        font-size: 14px;
+        line-height: 14px;
+        padding: 8px 2px;
+    }
+    .more_information_section .tabs-box .nav-tabs li {
+        margin: 0 12px;
+    }
+    .more_information_section .nav-tabs {
+        margin-bottom: 25px;
+    }
+    .more_information_section .reviews_content_box {
+        padding: 25px 20px;
+        margin-bottom: 15px;
+    }
+    .more_information_section .reviews_content_box figure {
+        width: 15%;
+    }
+    .more_information_section .reviews_content_box .text_wrapper {
+        width: 85%;
+        padding-left: 10px;
+    }
+    .more_information_section .reviews_content h3 {
+        margin-bottom: 15px;
+    }
+    .more_information_section .reviews_content form input, .more_information_section .reviews_content form textarea {
+        padding: 5px 12px;
+        height: 45px;
+        margin-bottom: 12px;
+    }
+    .more_information_section .reviews_content form textarea {
+        height: 110px;
+        margin-bottom: 15px;
+        padding: 8px 12px;
+    }
+    .more_information_section .reviews_content button {
+        padding: 15px 15px 15px 20px;
+    }
+    .more_information_section .reviews_content button i {
+        padding-left: 10px;
+    }
+    .related_product_section {
+        padding: 50px 0 100px;
+    }
+    .related_product_section .related_product_content h3 {
+        margin-bottom: 25px;
+    }
+    .related_product_section .related_product_box .related_product_box_content ul li i {
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+@media screen and (max-width: 575px) {
+	.default-btn {
+        padding: 12px 15px 12px 20px;
+    }
+    .nft-section {
+        padding: 120px 0;
+    }
+    .nft-section .create-nft-box .form-group {
+        width: 100%; 
+        margin: 0 0 20px 0; 
+    }
+    .nft-section .create-nft-box .form-group select { 
+        background-position: 93.5% 19px !important; 
+    }
+    .nft-section .create-nft-box .special { 
+        width: 100% !important; 
+    }
+    .nft-section .create-nft-box .form-group .form-control { 
+        height: 46px; 
+        padding: 0 10px;
+    }
+    .nft-section .create-nft-box .form-check { 
+        padding-top: 0px; 
+        padding-bottom: 20px; 
+        padding-left: 20px; 
+    }
+    .nft-section .create-nft-box .form-check input { 
+        width: 16px; 
+        height: 16px; 
+        line-height: 16px; 
+    }
+    .nft-section .create-nft-box .form-check label { 
+        font-size: 14px; 
+        line-height: 14px; 
+        margin-left: 5px; 
+    }
+    .nft-section .create-nft-box .btn { 
+        font-size: 14px; 
+        line-height: 14px; 
+        padding: 14px 30px; 
+        width: 100%; 
+        margin: 0 auto; 
+    }
+    .nft-section .preview-box-middle { 
+        padding-bottom: 20px; 
+        margin-bottom: 20px; 
+    }
+    .nft-section .preview-box-top i { 
+        font-size: 18px; 
+        line-height: 24px; 
+    }
+    .nft-section .preview-box a i {
+        padding-left: 10px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .checkout-section .preview-box .btn-outer .btn { 
+        font-size: 14px; 
+        line-height: 14px; 
+        padding: 14px 20px; 
+    }
+    .checkout-section .preview-box .btn-outer button {
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .checkout-section .preview-box .btn-outer button i {
+        padding-left: 10px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    #search input[type="search"] {
+        font-size: 24px; 
+    }
+
+    .cart-section .product .product-image img { 
+        width: 65px; 
+    }
+    .cart-section .product-removal { 
+        float: right; 
+    }
+    .cart-section .product-line-price { 
+        float: right; 
+        clear: left; 
+        width: auto; 
+        margin-top: 10px; 
+        font-size: 14px; 
+    }
+    .cart-section .product .product-line-price:before { 
+        content: 'Item Total:'; 
+        font-size: 14px; 
+    }
+    .cart-section .totals .totals-item label { 
+        width: 60%; 
+    }
+    .cart-section .totals .totals-item .totals-value { 
+        width: 40%; 
+    }
+    .cart-section .product-price { 
+        font-size: 14px; 
+    }
+
+    .shop_section .nav-tabs {
+        padding: 0 3px;
+        margin-bottom: 25px;
+    }
+    .shop_section .tabs-box .nav-tabs li {
+        margin: 0px 4px;
+    }
+    .shop_section .shop_box .shop_box_content .btn_wrapper a i {
+        padding-left: 8px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .product-detail .heading .cart_btn {
+        padding: 10px 12px;
+    }
+    .product-detail .heading a i {
+        padding-left: 10px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .more_information_section .nav-tabs {
+        margin-bottom: 20px;
+    }
+    .more_information_section .tabs-box .nav-tabs li {
+        margin: 0 8px;
+    }
+    .more_information_section .information_content table tr td {
+        padding: 10px 10px;
+        line-height: 20px;
+    }
+    .more_information_section .information_content table tr th {
+        padding: 10px 10px;
+        line-height: 20px;
+    }
+    .more_information_section .reviews_content_box figure {
+        width: 23%;
+    }
+    .more_information_section .reviews_content_box .text_wrapper {
+        width: 77%;
+        padding-left: 15px;
+    }
+    .more_information_section .reviews_content_box p {
+        margin-bottom: 0;
+    }
+    .more_information_section .reviews_content_box ul li i {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .more_information_section .reviews_content button {
+        padding: 12px 12px 12px 15px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .more_information_section .reviews_content button i {
+        padding-left: 8px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .related_product_section {
+        padding: 55px 0 100px;
+    }
+    .related_product_section .related_product_content h3 {
+        margin-bottom: 20px;
+    }
+    .related_product_section .related_product_box .related_product_box_content .btn_wrapper a i {
+        padding-left: 8px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}

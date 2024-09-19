@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Loss Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="background-container">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <form id="multistepForm">
+                <!-- Step 1 -->
+                <div class="step" data-step="1">
+                    <h2>Step 1 of 3</h2>
+                    <h3>Your information and goals</h3>
+                    <h1>Let's get started</h1>
+                    <p>Please provide your name and email address to begin.</p>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Full Name</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <select id="state" name="state" required>
+                                <option value="" disabled selected>Select your state</option>
+                            </select>
+                            <label for="state">State</label>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-field">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <div id="weightLossGoalSection" class="hidden fade-in-section">
+                        <h1>What is your weight loss goal?</h1>
+                        <p>Select as many as you like. We'll design a program to help you achieve all of your goals.</p>
+                        <div class="options">
+                            <label class="option">
+                                <input type="checkbox" name="goal" value="improve_health">
+                                <span class="checkmark"></span>
+                                <span class="icon">🍏</span>
+                                Improve my general health
+                            </label>
+                            <label class="option">
+                                <input type="checkbox" name="goal" value="maintain_weight">
+                                <span class="checkmark"></span>
+                                <span class="icon">💪</span>
+                                Maintain my weight and get fit
+                            </label>
+                            <label class="option">
+                                <input type="checkbox" name="goal" value="increase_energy">
+                                <span class="checkmark"></span>
+                                <span class="icon">⚡</span>
+                                Increase energy for activities I enjoy
+                            </label>
+                            <label class="option">
+                                <input type="checkbox" name="goal" value="feel_confident">
+                                <span class="checkmark"></span>
+                                <span class="icon">✨</span>
+                                Feel more confident
+                            </label>
+                            <label class="option">
+                                <input type="checkbox" name="goal" value="different_goal">
+                                <span class="checkmark"></span>
+                                <span class="icon">🖐️</span>
+                                I have a different goal not listed
+                            </label>
+                            <label class="option">
+                                <input type="checkbox" name="goal" value="not_sure">
+                                <span class="checkmark"></span>
+                                <span class="icon">🤷</span>
+                                I am not sure, but I want to lose weight
+                            </label>
+                        </div>
+                    </div>
+                    <div class="navigation-buttons">
+                        <button type="button" class="back-btn" style="visibility: hidden;">Back</button>
+                        <button type="button" class="continue-btn">Continue</button>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step" data-step="2">
+                    <h2>Step 2 of 3</h2>
+                    <h1>What is your current height and weight?</h1>
+                    <p>This information will help your provider put together the right treatment plan.</p>
+                    
+                    <div class="input-group height-input">
+                        <div class="input-field">
+                            <input type="number" id="feet" name="feet" min="1" max="8" required placeholder=" ">
+                            <label for="feet">Feet</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="number" id="inches" name="inches" min="0" max="11" required placeholder=" ">
+                            <label for="inches">Inches</label>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group weight-input">
+                        <div class="input-field">
+                            <input type="number" id="weight" name="weight" min="1" max="1000" required placeholder=" ">
+                            <label for="weight">Current weight (lbs)</label>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-field birthday-field">
+                            <input type="text" id="dob" name="dob" required placeholder=" ">
+                            <label for="dob">Date of birth</label>
+                        </div>
+                        <div id="age-display" class="age-display"></div>
+                    </div>
+                    
+                    <div class="input-group sex-input">
+                        <div class="input-field">
+                            <select id="sex" name="sex" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="sex">Sex assigned at birth</label>
+                        </div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <button type="button" class="back-btn">Back</button>
+                        <button type="button" class="continue-btn">Continue</button>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step" data-step="3">
+                    <h2>Step 3 of 3</h2>
+                    <h1>Your potential weight loss</h1>
+                    <div class="weight-summary">
+                        <div class="total-weight">
+                            <span>Total Weight:</span>
+                            <span id="totalWeightDisplay" class="big-bold"></span>
+                        </div>
+                        <div class="potential-loss">
+                            <span>Potential Weight Loss:</span>
+                            <span id="potentialLossDisplay" class="big-bold"></span>
+                        </div>
+                    </div>
+                    <p>This is your potential weight loss with medication, diet and exercise. Our weight loss program includes support for each of these factors, and your provider will be there to support you via video and messaging - every step of the way. No chatbots, just real doctors and practitioners.</p>
+                    
+                    <div class="recap-section">
+                        <h3>Your Information Recap</h3>
+                        <div class="recap-personal">
+                            <h4>Personal Information:</h4>
+                            <p>Name: <span id="nameRecap"></span></p>
+                            <p>State: <span id="stateRecap"></span></p>
+                            <p>Email: <span id="emailRecap"></span></p>
+                        </div>
+                        <div class="recap-goals">
+                            <h4>Your Goals:</h4>
+                            <ul id="goalsList"></ul>
+                        </div>
+                        <div class="recap-details">
+                            <h4>Your Details:</h4>
+                            <p>Height: <span id="heightRecap"></span></p>
+                            <p>Current Weight: <span id="weightRecap"></span> lbs</p>
+                            <p>Age: <span id="ageRecap"></span></p>
+                            <p>Sex: <span id="sexRecap"></span></p>
+                        </div>
+                    </div>
+                    
+                    <p>Weight loss results aren't just something you see - they're something you feel. Clinical data shows that losing weight can lead to better sleep!</p>
+                    
+                    <div class="navigation-buttons">
+                        <button type="button" class="back-btn">Back</button>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+       ```html
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
